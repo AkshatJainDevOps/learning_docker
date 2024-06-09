@@ -1,0 +1,23 @@
+versions: '3'
+services:
+  web_page:
+    image: web_image
+    container_name: web_container
+    networks:
+      - alpine_network
+    ports:
+      - 5000:5000
+
+  server_page:
+    image: nginx
+    container_name: nginx_container
+    networks:
+      - alpine_network
+    ports:
+      - 80:80
+
+networks:
+  alpine_network:
+    external: true
+
+
