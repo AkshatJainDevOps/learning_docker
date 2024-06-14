@@ -1,4 +1,4 @@
-version: '3'
+version: '3.8'
 services:
   applicatione:
     image: web_image:pyalp1
