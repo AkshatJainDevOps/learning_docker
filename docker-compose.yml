@@ -1,11 +1,13 @@
+version: '3'
+
 services:
   application:
-    image: akshatjaindevops/web_image:pyalp1
+    image: web_image
     container_name: web_container
     networks:
       - alpine_network
     ports:
-      - 5000:5000
+      - "5000:5000"
 
   nginx:
     image: nginx
@@ -13,7 +15,7 @@ services:
     networks:
       - alpine_network
     ports:
-      - 80:80
+      - "80:80"
 
 networks:
   alpine_network:

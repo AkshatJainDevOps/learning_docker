@@ -6,7 +6,7 @@ services:
     networks:
       - alpine_network
     ports:
-      - 5000:5000
+      - "5000:5000"
 
   server_page:
     image: nginx
@@ -14,7 +14,7 @@ services:
     networks:
       - alpine_network
     ports:
-      - 80:80
+      - "80:80"
 
 networks:
   alpine_network:
