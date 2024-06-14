@@ -1,6 +1,6 @@
 services:
-  applicatione:
-    image: web_image:pyalp1
+  application:
+    image: akshatjaindevops/web_image:pyalp1
     container_name: web_container
     networks:
       - alpine_network
